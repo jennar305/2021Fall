@@ -9,3 +9,4 @@ Here is a picture of me!:
 ![IMG_9293](https://user-images.githubusercontent.com/71038940/131057469-748b2f71-6be9-4ada-8e91-f6757081ca68.jpg)
 
 
+#Uses Bulma for styling

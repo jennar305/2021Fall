@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop-Down Menu</title>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropdown-hover"> Open for more </button>
+        <div class="dropdown-list">
+          <a href="#home"> Home </a>
+          <a href="#about"> About </a>
+          <a href="#contact"> Contact Us </a>
+        </div>
+
+    <style>
+        .dropdown-hover {
+          background-color: lightblue;
+          color: black;
+          padding: 20px;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 20px;
+        }
+        
+        .dropdown {
+          display: inline-block;
+        }
+       
+        .dropdown-list {
+          display: none;
+          background-color: white;
+          width: 190px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        
+        .dropdown-list a {
+          color: black;
+          padding: 34px 40px; 
+          display: block;
+        }
+        
+        .dropdown-list a:hover {background-color: gray}
+        
+        .dropdown:hover .dropdown-list {
+          display: block;
+        } 
+        </style>
+</body>
+</html>

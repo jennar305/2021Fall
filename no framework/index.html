@@ -97,7 +97,7 @@
             </div>
           </article>
 
-      </div>
+    <!---  </div>
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
       <script>
           let size = 72;
@@ -110,6 +110,36 @@
             $(this).closest(".message").slideUp();
           });
 
-      </script>
+      </script> ---->
+
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+
+      const VM = {
+          data() {
+              return {
+                  counter: 3,
+                  now: new Date().toLocaleString(),
+                  visible: true
+              }
+          },
+          mounted() {
+              setInterval(() => this.now = new Date().toLocaleString() , 1000)
+          },
+          methods: {
+              grow(){
+                  this.counter += 10;
+              },
+              close(){
+                  this.visible = false;
+              }
+          }
+      }
+
+      Vue.createApp(VM).mount('.container')
+
+    </script>
+
 </body>
 </html>

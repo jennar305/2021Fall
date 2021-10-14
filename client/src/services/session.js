@@ -1,16 +1,15 @@
 import router from "../router";
+import { Login } from "./users";
 const session = {
     user: null,
     messages: [],
     toRoute: '/feed',
-    Login(email, password){
+    Login(handle, password){
 
-        this.user = {
-            FirstName: 'Jenna',
-            LastName: email,
-            Password: password,
-            id: 613,
-        }
+        const user = Login(handle, password);
+
+        this.user = user.user;
+
         router.push(this.toRoute);
     }
 };

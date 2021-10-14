@@ -43,7 +43,7 @@ export default {
     }),
     methods: {
         login(){
-            Session.Login(this.email, this.password);
+            this.Session.Login(this.email, this.password);
         }
     }
 

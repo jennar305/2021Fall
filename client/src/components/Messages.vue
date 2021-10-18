@@ -16,7 +16,7 @@ export default {
     }),
     methods: {
         done(i){
-            this.messages.splice(i, 1)
+            this.messages.splice(i, 1);
         }
     }
 }

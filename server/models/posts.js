@@ -1,4 +1,4 @@
-const { GetByHandle } = require( "./users" );
+const { GetByHandle } = require( "./users");
 
 const list = [
     { 
@@ -78,4 +78,4 @@ module.exports.Delete = function Delete(post_id) {
     const post = list[post_id];
     list.splice(post_id, 1);
     return post;
-}
+} 

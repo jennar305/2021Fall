@@ -40,7 +40,9 @@ const list = [
 ];
 
 module.exports.GetAll = function GetAll() { return list; }
-module.exports.Get = user_id => list[user_id];
+
+module.exports.Get = user_id => list[user_id]; 
+
 module.exports.GetByHandle = function GetByHandle(handle) { return ({ ...list.find( x => x.handle == handle ), password: undefined }); } 
 
 module.exports.Add = function Add(user) {

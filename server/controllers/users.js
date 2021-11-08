@@ -4,6 +4,12 @@ const model = require("../models/users");
 const app = express.Router();
 
 app
+   /* .get("/async", (req, res, next) =>{
+        console.log("Outer function 1")
+        model.Async()
+        res.send("Done!");
+        console.log("Outer function 2")
+    }) */
     .get("/", (req, res, next) =>{
         res.send(model.GetAll());
     })

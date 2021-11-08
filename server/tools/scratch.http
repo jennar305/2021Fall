@@ -30,7 +30,7 @@ https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
 POST http://localhost:3100/users/register
 Content-Type: application/json
 
-    {
+    { 
         "firstName": "Joe",
         "lastName": "Biden",
         "handle": "@potus",
@@ -38,10 +38,19 @@ Content-Type: application/json
         "password": "password",
         "isAdmin": true,
         "emails": [
-            "potus@wh.com"
+            "potus@wh.gov"
         ],
         "following": [ { "handle": "@johnsmith", "isApproved": true } ]
     }
 
 ###
-http://localhost:3100/users/async
+POST http://localhost:3100/users/login
+Content-Type: application/json
+
+    { 
+        "handle": "@potus",
+        "password": "password"
+    }
+
+###
+POST http://localhost:3100/users/seed

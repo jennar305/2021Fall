@@ -1,6 +1,7 @@
 <template>
   <div class="section">
       <h1 class="title"> Feed Page </h1>
+      
       <div class="columns">
         <div class="column is-one-third is-offset-one-third">
             
@@ -19,12 +20,17 @@
 <script>
 import Post from '../components/Post.vue';
 import session from "../services/session";
-import { GetWall } from "../services/posts";
+import { GetFeed } from "../services/posts";
 export default {
-  components: { Post },
+    components: {
+        Post
+    },
     data: ()=> ({
-        posts: GetWall(session.user.handle)
-    })
+        posts: []
+    }),
+    async mounted(){
+        this.posts = await GetFeed(session.user.handle)
+    }
 }
 </script>
 

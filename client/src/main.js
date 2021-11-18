@@ -9,9 +9,9 @@ import App from './App.vue'
 import router from './router'
 
 createApp(App)
-.use(router)
-.use(Notification)
-.use(Config, {
-    iconPack: 'fas'
-})
-.mount('#app')
+    .use(router)
+    .use(Notification)
+    .use(Config, {
+        iconPack: 'fas'
+    })
+    .mount('#app')

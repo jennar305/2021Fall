@@ -4,8 +4,10 @@ const uri = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASS}@c
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
+
 const isConnected = client.connect();
 
-module.exports = { 
-    client, isConnected 
+
+module.exports = {
+    client, isConnected
 }

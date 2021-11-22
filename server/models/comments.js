@@ -44,3 +44,25 @@ function Delete(id) {
 module.exports = {
     Get, Add, Update, Delete, 
 }
+
+async function Update(id, comment) {
+    const oldComment = await Get(id);
+    if(!comment) throw { code: 404, msg: 'Comment not found'};
+
+    const newComment = {...oldComment, ...comment};
+    return collection.updateOne(
+        { "comments._id":  new ObjectId(id) },
+        { $set : { "comments.$": newComment } }
+    );  
+}
+
+function Delete(id) {
+    return collection.updateOne(
+        { "comments._id":  new ObjectId(id) },
+        { $pull : {"comments" : { "_id":  new ObjectId(id) } } }
+    );    
+}
+
+module.exports = {
+    Get, Add, Update, Delete, 
+}

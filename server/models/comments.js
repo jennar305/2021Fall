@@ -42,6 +42,7 @@ function Delete(id) {
 }
 
 module.exports = {
+    // @ts-ignore
     Get, Add, Update, Delete, 
 }
 
@@ -64,5 +65,6 @@ function Delete(id) {
 }
 
 module.exports = {
+    // @ts-ignore
     Get, Add, Update, Delete, 
 }

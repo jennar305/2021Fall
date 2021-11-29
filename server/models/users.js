@@ -20,6 +20,19 @@ const list = [
         get name(){ return this.firstName + ' ' + this.lastName },
     },
     { 
+        firstName: 'Jenna',
+        lastName: 'Rodriguez',
+        username: 'jenna',
+        pic: '../assets/me.jpg',
+        password: 'hi',
+        isAdmin: true,
+        emails: [
+            "rodriguj94@newpaltz.edu"
+        ],
+        following: [ { handle: '@vp', isApproved: true }, { handle: '@johnsmith', isApproved: true }, ],
+        //get name(){ return this.firstName + ' ' + this.lastName }
+    },
+    { 
         firstName: 'Kamala',
         lastName: 'Harris',
         handle: '@vp',

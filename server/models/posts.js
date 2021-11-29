@@ -7,7 +7,7 @@ module.exports.collection = collection;
 
 const list = [
     { 
-        src: "https://bulma.io/images/placeholders/1280x960.png",
+        src: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.self.com%2Fstory%2Ftrainers-to-follow-instagram-actually-doable-at-home-workouts&psig=AOvVaw17J6L4d88L6bDseoUwc0bl&ust=1637907937218000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCODI-trwsvQCFQAAAAAdAAAAABAD",
         alt: "Placeholder image",
         caption: "Lorem Ipsom",
         time: Date(),

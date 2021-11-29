@@ -41,6 +41,7 @@ export default {
     },
     computed: {
         prettyDate(){
+            // @ts-ignore
             if(this.post.time && this.post.time.toDateString){
                 return this.post.time.toDateString()
             }else{
